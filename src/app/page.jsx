@@ -12,33 +12,6 @@ import { TypeAnimation } from 'react-type-animation';
 export default function App() {
   return (
     <div className="">
-      {/* <nav className='flex justify-center items-center gap-[5rem] py-4 '>
-        <Link
-          href='/'
-          className='text-xl text-neutral-400 transform transition duration-300 hover:text-white hover:scale-110'
-        >
-          Home
-        </Link>
-        <Link
-          href='/about'
-          className='text-xl text-neutral-400 transform transition duration-300 hover:text-white hover:scale-110'
-        >
-          Skills
-        </Link>
-        <Link
-          href='/projects'
-          className='text-xl text-neutral-400 transform transition duration-300 hover:text-white hover:scale-110'
-        >
-          Projects
-        </Link>
-        <Link
-          href='/certifications'
-          className='text-xl text-neutral-400 transform transition duration-300 hover:text-white hover:scale-110'
-        >
-          Certifications
-        </Link>
-      </nav> */}
-
       <motion.div
         className="grid sm:grid-cols-2 container mx-auto pt-[5rem] place-content-center"
         initial={{ opacity: 0 }}
@@ -89,7 +62,7 @@ export default function App() {
           <motion.h2 className="text-base font-semibold text-white mb-6 text-center sm:text-start sm:text-xl">
             <TypeAnimation
               sequence={[
-                2500,
+                2000,
                 'A Full Stack Laravel Developer', 1000,
                 'Improving, One Line at a Time', 1000,
                 'Always Seeking Growth', 1000,
