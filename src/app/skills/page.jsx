@@ -52,14 +52,19 @@ export default function page() {
             transition={{ duration: 2, type: 'spring', stiffness: 60 }}
         >
             <div className="min-h-[100px] flex justify-center items-center">
-                <Lottie animationData={animationData} loop={true} className='w-[450px] h-[450px]' />
+                <Lottie animationData={animationData} loop={true} className='w-[300px] h-[300px] mb-[2rem] sm:w-[450px] sm:h-[450px]'
+                />
             </div>
 
             <div className="min-h-[100px]">
-                <div className="mb-8">
-                    <h2 className="text-2xl font-bold text-white mb-4">Most Used Programming Languages</h2>
+                <div className="mb-12 sm:mb-8">
+                    <h2
+                        className="text-xl font-bold text-center text-white mb-4 sm:text-2xl sm:text-start"
+                    >
+                        Most Used Programming Languages
+                    </h2>
 
-                    <div className="grid gap-5 grid-cols-2 sm:grid-cols-5">
+                    <div className="grid gap-3 grid-cols-3 sm:grid-cols-5 sm:gap-5">
                         {
                             used.map((skill, index) => (
                                 <motion.div
@@ -85,13 +90,17 @@ export default function page() {
                 </div>
 
                 <div className="">
-                    <h2 className="text-2xl font-bold text-white mb-4">Others</h2>
+                    <h2
+                        className="text-xl text-center font-bold text-white mb-4 sm:text-start sm:text-2xl"
+                    >
+                        Others
+                    </h2>
 
-                    <div className="grid gap-5 grid-cols-2 sm:grid-cols-5">
+                    <div className="grid gap-3 grid-cols-3 sm:grid-cols-5 sm:gap-5">
                         {
                             others.map((skill, index) => (
                                 <motion.div
-                                    className="flex flex-col items-center"
+                                    className="flex flex-col items-center py-2"
                                     key={index}
                                     initial={{ y: 0 }}
                                     whileHover={{

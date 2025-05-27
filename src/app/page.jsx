@@ -20,7 +20,7 @@ export default function App() {
       >
         {/* Left Side: Image Section */}
         <motion.div
-          className="min-h-[400px] flex justify-center items-center"
+          className="min-h-[150px] sm:min-h-[400px] flex justify-center items-center"
           animate={{ y: [0, -20, 0] }}
           transition={{
             duration: 1.5,
@@ -33,7 +33,7 @@ export default function App() {
           <Image
             src={profile}
             alt="profile"
-            className="w-[350px] h-[350px] object-cover bg-slate-200 rounded-full border-6 border-[#FE7743]"
+            className="w-[200px] h-[200px] object-cover bg-slate-200 rounded-full border-6 border-[#FE7743] sm:w-[350px] sm:h-[350px]"
           />
         </motion.div>
 

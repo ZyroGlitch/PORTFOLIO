@@ -53,7 +53,13 @@ const projects = [
 
 export default function page() {
     return (
-        <div className='container mx-auto py-[4rem]'>
+        <motion.div
+            className='mx-[3rem] py-[3rem] sm:container sm:mx-auto sm:py-[4rem]
+        '
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+        >
             <div className="grid gap-[3rem] sm:grid-cols-3">
                 {
                     projects.map((project, index) => (
@@ -105,6 +111,6 @@ export default function page() {
                     ))
                 }
             </div>
-        </div >
+        </motion.div >
     )
 }
