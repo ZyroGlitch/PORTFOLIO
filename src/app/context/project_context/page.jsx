@@ -1,23 +1,15 @@
-// src/context/ProjectContext.tsx   (or .jsx)
 "use client";
 import { createContext, useContext, useState } from "react";
 
-// type Project = {
-//     title: string;
-//     description: string;
-//     /* add the rest of your fields here */
-// };
-
-const ProjectContext = createContext < {
-    project: any;
-    setProject: React.Dispatch < React.SetStateAction < any >>;
-} > ({
+// Remove type annotations; these are not valid in .jsx
+const ProjectContext = createContext({
     project: null,
     setProject: () => { },
 });
 
 export const ProjectProvider = ({ children }) => {
     const [project, setProject] = useState(null);
+
     return (
         <ProjectContext.Provider value={{ project, setProject }}>
             {children}
