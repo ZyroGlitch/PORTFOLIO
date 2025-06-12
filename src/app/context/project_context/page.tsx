@@ -8,16 +8,16 @@ type Project = {
     /* add the rest of your fields here */
 };
 
-const ProjectContext = createContext < {
+const ProjectContext = createContext<{
     project: Project | null;
     setProject: (p: Project) => void;
-} > ({
+}>({
     project: null,
     setProject: () => { },
 });
 
 export const ProjectProvider = ({ children }) => {
-    const [project, setProject] = useState < Project | null > (null);
+    const [project, setProject] = useState<Project | null>(null);
     return (
         <ProjectContext.Provider value={{ project, setProject }}>
             {children}
