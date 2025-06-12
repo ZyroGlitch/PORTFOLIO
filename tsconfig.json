@@ -28,7 +28,6 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/app/context/project_context/page.jsx"
   ],
   "exclude": [
     "node_modules"

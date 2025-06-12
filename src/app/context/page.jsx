@@ -1,12 +1,13 @@
 "use client";
 import { createContext, useContext, useState } from "react";
 
-// Remove type annotations; these are not valid in .jsx
+// 1. Create the context with a default value
 const ProjectContext = createContext({
     project: null,
     setProject: () => { },
 });
 
+// 2. Provider component
 export const ProjectProvider = ({ children }) => {
     const [project, setProject] = useState(null);
 
@@ -17,4 +18,5 @@ export const ProjectProvider = ({ children }) => {
     );
 };
 
+// 3. Custom hook to use the context
 export const useProject = () => useContext(ProjectContext);
