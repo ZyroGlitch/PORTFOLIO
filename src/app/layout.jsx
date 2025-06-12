@@ -22,6 +22,9 @@ const myFont = localFont({
 export const metadata = {
   title: "Portfolio",
   description: "My personal portfolio showcasing my projects and skills.",
+  icons: {
+    icon: "/logo.png", // or use .png like "/favicon.png"
+  },
 };
 
 export default function RootLayout({ children }) {

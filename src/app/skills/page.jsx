@@ -16,6 +16,8 @@ import {
     DiReact,
     DiDart,
     DiBootstrap,
+    DiPhp,
+    DiEclipse,
 } from "react-icons/di";
 import { FaAnglesRight } from "react-icons/fa6";
 import { LuEqualApproximately } from "react-icons/lu";
@@ -29,6 +31,7 @@ const used = [
     { name: "Tailwind", icon: <LuEqualApproximately className="text-4xl text-[#FE7743]" /> },
     { name: "Bootstrap", icon: <DiBootstrap className="text-4xl text-[#FE7743]" /> },
     { name: "MySQL", icon: <DiMysql className="text-4xl text-[#FE7743]" /> },
+    { name: "PHP", icon: <DiPhp className="text-4xl text-[#FE7743]" /> },
 ]
 
 const others = [
@@ -40,13 +43,14 @@ const others = [
     { name: "Dart", icon: <DiDart className="text-4xl text-[#FE7743]" /> },
     { name: "Firebase", icon: <AiFillFire className="text-4xl text-[#FE7743]" /> },
     { name: "Git", icon: <DiGit className="text-4xl text-[#FE7743]" /> },
-    { name: "Github", icon: <DiGithubBadge className="text-4xl text-[#FE7743]" /> }
+    { name: "Github", icon: <DiGithubBadge className="text-4xl text-[#FE7743]" /> },
+    { name: "Eclipse", icon: <DiEclipse className="text-4xl text-[#FE7743]" /> }
 ]
 
 export default function page() {
     return (
         <motion.div
-            className='grid sm:grid-cols-2 pt-[3rem] container mx-auto'
+            className='grid sm:grid-cols-2 container mx-auto py-[3rem] sm:pt-[3rem]'
             initial={{ y: '-100vh' }}
             animate={{ y: 0 }}
             transition={{ duration: 2, type: 'spring', stiffness: 60 }}
