@@ -2,22 +2,22 @@
 "use client";
 import { createContext, useContext, useState } from "react";
 
-type Project = {
-    title: string;
-    description: string;
-    /* add the rest of your fields here */
-};
+// type Project = {
+//     title: string;
+//     description: string;
+//     /* add the rest of your fields here */
+// };
 
-const ProjectContext = createContext<{
-    project: Project | null;
-    setProject: (p: Project) => void;
-}>({
+const ProjectContext = createContext < {
+    project: any;
+    setProject: React.Dispatch < React.SetStateAction < any >>;
+} > ({
     project: null,
     setProject: () => { },
 });
 
 export const ProjectProvider = ({ children }) => {
-    const [project, setProject] = useState<Project | null>(null);
+    const [project, setProject] = useState(null);
     return (
         <ProjectContext.Provider value={{ project, setProject }}>
             {children}

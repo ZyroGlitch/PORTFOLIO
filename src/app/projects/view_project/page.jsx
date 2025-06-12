@@ -140,8 +140,7 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from "@/components/ui/carousel";
-import { CarouselApi } from '@/components/ui/carousel'; // Adjust path if needed
+} from '../../../components/ui/carousel';
 
 const projects = [
     {

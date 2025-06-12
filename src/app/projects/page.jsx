@@ -9,7 +9,7 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card"
+} from "../../components/ui/card"
 import { motion } from 'framer-motion';
 import Image from 'next/image'
 import project1 from '../../../public/projects/project1.png'
@@ -20,7 +20,7 @@ import project5 from '../../../public/kargadala/image1.png'
 import project6 from '../../../public/flashback/image1.png'
 import project7 from '../../../public/komyut/image1.png'
 
-import { Button } from '@/components/ui/button';
+import { Button } from '../../components/ui/button';
 import Link from 'next/link';
 import { DiGithubBadge } from "react-icons/di";
 import harmonics1 from '../../../public/harmonics/image1.jpg'

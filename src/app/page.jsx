@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import profile from '../../public/profile.png'
-import { Button } from '@/components/ui/button'
+import { Button } from '../components/ui/button'
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { LuGithub, LuFacebook, LuInstagram } from "react-icons/lu";
@@ -16,10 +16,10 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+} from "../components/ui/card"
+import { Input } from "../components/ui/input"
+import { Textarea } from "../components/ui/textarea"
+import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert"
 import { CheckCircle2Icon, Loader2Icon } from "lucide-react"
 
 
