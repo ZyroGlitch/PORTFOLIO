@@ -1,28 +1,12 @@
-// src/context/ProjectContext.tsx   (or .jsx)
+// src/app/context/project_context/page.tsx
 "use client";
-import { createContext, useContext, useState } from "react";
 
-type Project = {
-    title: string;
-    description: string;
-    /* add the rest of your fields here */
-};
+import { ProjectProvider } from "../ProjectProvider";
 
-const ProjectContext = createContext<{
-    project: Project | null;
-    setProject: (p: Project) => void;
-}>({
-    project: null,
-    setProject: () => { },
-});
-
-export const ProjectProvider = ({ children }) => {
-    const [project, setProject] = useState<Project | null>(null);
+export default function ProjectPage() {
     return (
-        <ProjectContext.Provider value={{ project, setProject }}>
-            {children}
-        </ProjectContext.Provider>
+        <ProjectProvider>
+            <div>Hello from Project Page</div>
+        </ProjectProvider>
     );
-};
-
-export const useProject = () => useContext(ProjectContext);
+}
